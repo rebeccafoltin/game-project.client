@@ -1,0 +1,24 @@
+body {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1 {
+    font-family:Arial, Helvetica, sans-serif;
+    color: hotpink;
+    text-align: center;
+}
+
+h2 {
+    text-align:center;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+h3 {
+    text-align:center;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+#clickMe {
+    color: magenta;
+    text-align: center;
+}
