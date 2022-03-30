@@ -1,12 +1,12 @@
 'use strict'
 
-const store = require('../store.js')
-const { config } = require('grunt')
+const store = require('./store.js')
+const config = require('grunt')
 
 const onSignUp = function (data) {
     return $.ajax({
         method: 'POST',
-        url: 'https://tic-tac-toe-api-production.herokuapp.com/sign-up',
+        url: 'http://localhost:7165/sign-up',
         data
     })
 }
@@ -14,7 +14,7 @@ const onSignUp = function (data) {
 const onSignIn = function(data) {
     return $.ajax({
         method: 'POST',
-        url: 'https://tic-tac-toe-api-production.herokuapp.com/sign-in',
+        url: 'http://localhost:7165/sign-in',
         data
     })
 }
@@ -22,7 +22,7 @@ const onSignIn = function(data) {
 const onSignOut = function () {
     return $.ajax({
         method: 'DELETE',
-        url: 'https://tic-tac-toe-api-production.herokuapp.com/sign-out',
+        url: 'http://localhost:7165/sign-out',
         headers: {
           Authorization: 'Bearer ' + store.user.token
     }
