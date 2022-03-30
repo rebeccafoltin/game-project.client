@@ -34,7 +34,7 @@ const onSignUp = function (event) {
 
 const onSignIn = function (event) {
   event.preventDefault()
-  console.log('sign in ran!')
+  console.log('sign in')
 
   const data = getFormFields(this)
   api.signIn(data)
@@ -44,7 +44,7 @@ const onSignIn = function (event) {
 
 const onSignOut = function (event) {
   event.preventDefault()
-  console.log('sign out ran')
+  console.log('sign out')
 
   api.signOut()
     .then(ui.signOutSuccess)
@@ -53,7 +53,7 @@ const onSignOut = function (event) {
 
 const onChangePassword = function (event) {
   event.preventDefault()
-  console.log('change password ran!')
+  console.log('change password')
 
   const data = getFormFields(this)
   api.changePassword(data)
@@ -70,4 +70,14 @@ const addHandlers = () => {
 
 module.exports = {
   addHandlers
+}
+
+const onNewGame = function (event) {
+  event.preventDefault();
+  plays = 0;
+  tie = false;
+  gameStatus = false;
+  currentLetter = "X";
+
+
 }

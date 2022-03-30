@@ -1,20 +1,18 @@
 Tic Tac Toe: A Description
-This application allows the user to do x, y, and z. Maybe here's a reason why I wanted to do this project, or came up with this idea.
+This application allows the user play tic tac toe with themselves. 
 
-Important Links
-Deployed Client
-Planning
+
 User Stories
 As a user I want to sign in/up
-As a user I want to Create a new < resource >
-As a user I want to Read multiple < resources >
-As a user I want to Read a single < resource >
-As a user I want to Update a < resource > I own
-As a user I want to Delete a < resource > I own
-Wireframe
-wireframe
+User is able to sign in/up/out
+User is able to play tic tac toe with the computer
+User is able to end or restart the game mid-interaction
+User is able to restart game and play again
+User is able to attach their email
+User is able to keep or erase score history
+User is able to rotate between X and Y
 
 
- README.md must include wireframes and user stories.
- README.md must include an explanation of the app.
- README.md must include a link the deployed application.
+<insert wireframe here>
+
+
