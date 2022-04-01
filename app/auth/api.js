@@ -6,7 +6,7 @@ const config = require('grunt')
 const onSignUp = function (data) {
     return $.ajax({
         method: 'POST',
-        url: 'http://localhost:7165/sign-up',
+        url: 'https://tic-tac-toe-api-development.herokuapp.com/sign-up',
         data
     })
 }
@@ -14,7 +14,7 @@ const onSignUp = function (data) {
 const onSignIn = function(data) {
     return $.ajax({
         method: 'POST',
-        url: 'http://localhost:7165/sign-in',
+        url: 'https://tic-tac-toe-api-development.herokuapp.com/sign-in',
         data
     })
 }
@@ -22,7 +22,7 @@ const onSignIn = function(data) {
 const onSignOut = function () {
     return $.ajax({
         method: 'DELETE',
-        url: 'http://localhost:7165/sign-out',
+        url: 'https://tic-tac-toe-api-development.herokuapp.com/sign-out',
         headers: {
           Authorization: 'Bearer ' + store.user.token
     }

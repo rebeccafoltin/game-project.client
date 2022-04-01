@@ -26,7 +26,7 @@ const onSignUp = function (event) {
   event.preventDefault()
   console.log('sign up ran!')
 
-  const data = getFormFields(this)
+  const data = getFormFields(event.target)
   api.signUp(data)
     .then(ui.signUpSuccess)
     .catch(ui.signUpFailure)
@@ -36,7 +36,7 @@ const onSignIn = function (event) {
   event.preventDefault()
   console.log('sign in')
 
-  const data = getFormFields(this)
+  const data = getFormFields(event.target)
   api.signIn(data)
     .then(ui.signInSuccess)
     .catch(ui.signInFailure)
@@ -55,7 +55,8 @@ const onChangePassword = function (event) {
   event.preventDefault()
   console.log('change password')
 
-  const data = getFormFields(this)
+  // function came with browser template
+  const data = getFormFields(event.target)
   api.changePassword(data)
     .then(ui.changePasswordSuccess)
     .catch(ui.changePasswordFailure)
