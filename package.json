@@ -9,6 +9,7 @@
   "dependencies": {
     "bootstrap": "^5.0.1",
     "jquery": "^3.6.0",
+    "node-polyfill-webpack-plugin": "^1.1.4",
     "popper.js": "^1.14.3"
   },
   "devDependencies": {

@@ -1,6 +1,6 @@
 const webpack = require('webpack')
 const TerserPlugin = require('terser-webpack-plugin')
-
+const NodePolyfillPlugin = require('node-polyfill-webpack-plugin')
 const path = require('path')
 module.exports = {
   options: {
@@ -18,7 +18,8 @@ module.exports = {
         $: 'jquery',
         jQuery: 'jquery',
         'window.jQuery': 'jquery'
-      })
+      }),
+      new NodePolyfillPlugin()
     ],
     module: {
       rules: [
